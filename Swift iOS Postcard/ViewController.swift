@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     @IBAction func sendMessageButtonPressed(sender: UIButton) {
         if enterNameTextField.text != "" {
             toLabel.text = "To: "+enterNameTextField.text
+            toLabel.textColor = UIColor.blueColor()
             toLabel.hidden = false
             enterNameTextField.text = ""
         }
