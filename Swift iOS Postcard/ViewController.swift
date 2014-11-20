@@ -39,8 +39,10 @@ class ViewController: UIViewController {
             messageLabel.hidden = false
             enterMessageTextField.text = ""
         }
+        // Remove iOS on-screen keyboard from view
         enterNameTextField.resignFirstResponder()
         enterMessageTextField.resignFirstResponder()
+        // Set Message button status to confim action
         sendMessageButton.setTitle("Message Sent", forState: UIControlState.Normal)
     }
 
